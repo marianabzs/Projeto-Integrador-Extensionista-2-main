@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="./Layout.css" rel="stylesheet"> <!-- externaliza o css -->
+    <meta charset="UTF-8">
+    <title>OrçaRápido</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1 style="color: aliceblue;">Bem-vindo ao OrçaRápido</h1>
+        <h2 style="color: aliceblue;">Vamos te ajudar a calcular o valor da sua obra</h2>
+    </div>
+
+    <nav>
+        <a href="#Alvenaria">Alvenaria</a>
+        <a href="#Cobertura">Cobertura</a>
+        <a href="#Acabamento">Acabamento</a>
+        <a href="#Botãocalc">Calcular</a>
+    </nav>
+    
+    <form>
+    <div class="m"><label for="area">Digite a área de construção em M²:</label>
+    <input type="number" id="area" min="1" placeholder="Digite em M²" 
+        onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div> <!-- setando minimo de m², impedindo de reiniciar a pag ao pressionar enter -->
+
+    <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
+    <select id="tipoconstrucao">
+        <option value="Residencial">residencial</option>
+        <option value="Comercial">comercial</option>
+    </select></div>
+    </form>
+      
+    <section id="Alvenaria">
+        <h2>Alvenaria</h2>
+        <p>Selecione o material:</p>
+        <br>
+        <button id="tijolo" onclick="toggleSelection(this)"><img src="img/tijolo.jpg"><p>Tijolo</p></button>
+        <button id="cimento"onclick="selecionarBotoes()"><img src="img/cimento.jpg"><p>Cimento</p></button>
+        <button id="areia"onclick="selecionarBotoes()"><img src="img/areia.jpg"><p>Areia</p></button>
+        <button id="cano"onclick="toggleSelection(this)"><img src="https://dcdn.mitiendanube.com/stores/003/317/653/products/tubo-de-agua51-d520df5b3c0366416016887532659483-1024-1024.png"><p>Cano PVC</p></button>
+    </section>
+
+    <section id="Cobertura">
+        <h2>Cobertura</h2>
+        <p>Selecione o material:</p>
+        <br>
+        <button onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/825875/telha_ceramica_natural_americana_mundi_2281_2_62bdea00a9e73c25089f46219dae2c64.jpg"><p>Telha</p></button>
+    </section>
+    
+    <section id="Acabamento">
+        <h2>Acabamento</h2>
+        <p>Selecione o material:</p>
+        <br>
+        <button id="argamassa" onclick="toggleSelection(this)"><img src="https://cdn.awsli.com.br/2500x2500/466/466641/produto/147230869/1dee02fc75.jpg"><p>Argamassa</p></button>
+    </section>
+    
+    <div class="centraliza-result">
+        <h2 class="result-visao" id="result"></h2>
+    </div>
+    
+    <div id="Botãocalc" class="centraliza-button">
+        <button class="calcular-button custom-btn btn-9" type="button" onclick="total()"><h2>Calcular</h2></button>
+    </div>
+
+    <script src="total.js"></script>
+  
+</body>
+</html>
