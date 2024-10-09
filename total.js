@@ -5,6 +5,11 @@ function total() {
     const cimentoSelecionado = document.getElementById('cimento').classList.contains('selected');
     const canoSelecionado = document.getElementById('cano').classList.contains('selected');
     const argamassaSelecionado = document.getElementById('argamassa').classList.contains('selected');
+    const britaselecionado = document.getElementById('brita').classList.contains('selected');
+    const vergalhaoselecionado = document.getElementById('vergalhao').classList.contains('selected');
+    const conduiteselecionado = document.getElementById('conduite').classList.contains('selected');
+    const caixadeluzselecionado = document.getElementById('caixa-de-luz').classList.contains('selected');
+    const caixadedistribuicaoSelecionado = document.getElementById('caixa-de-distribuicao').classList.contains('selected');
 
     let costPerSquareMeter;
 
@@ -45,6 +50,11 @@ function total() {
         const argametro = area / 4;
         const argatotal = argametro * 33.12;
         totalCost += argatotal;
+    }
+
+    if (vergalhaoselecionado) {
+        const vergametro = area / 4;
+        const vergapreco = vergametro * 40;
     }
 
     document.getElementById('result').innerText = `O custo total estimado é: R$ ${totalCost.toFixed(2)}`;
