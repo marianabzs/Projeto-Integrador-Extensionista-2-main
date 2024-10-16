@@ -1,75 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <link href="./Layout.css" rel="stylesheet"> <!-- externaliza o css -->
-    <meta charset="UTF-8">
-    <title>OrçaRápido</title>
-</head>
-<body>
-    <div class="titulo">
-        <h1 style="color: aliceblue;">Bem-vindo ao OrçaRápido</h1>
-        <h2 style="color: aliceblue;">Vamos te ajudar a calcular o valor da sua obra</h2>
-    </div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
 
-    <nav>
-        <a href="#Alvenaria">Alvenaria</a>
-        <a href="#Cobertura">Cobertura</a>
-        <a href="#Acabamento">Acabamento</a>
-        <a href="#Botãocalc">Calcular</a>
-    </nav>
-    
-    <form>
-    <div class="m"><label for="area">Digite a área de construção em M²:</label>
-    <input type="number" id="area" min="1" placeholder="Digite em M²" 
-        onkeydown="if(event.key === 'Enter') event.preventDefault();">
-    </div> <!-- setando minimo de m², impedindo de reiniciar a pag ao pressionar enter -->
-
-    <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
-    <select id="tipoconstrucao">
-        <option value="Residencial">residencial</option>
-        <option value="Comercial">comercial</option>
-    </select></div>
-    </form>
-      
-    <section id="Alvenaria">
-        <h2>Alvenaria</h2>
-        <p>Selecione o material:</p>
-        <br>
-        <button id="tijolo" onclick="toggleSelection(this)"><img src="img\tijolo.png"><p>Tijolo</p></button>
-        <button id="cimento"onclick="selecionarBotoes()"><img src="img\cimento.png"><p>Cimento</p></button>
-        <button id="areia"onclick="selecionarBotoes()"><img src="img\areia.png"><p>Areia</p></button>
-        <button id="cano"onclick="toggleSelection(this)"><img src="img\Cano PVC.jpg"><p>Cano PVC</p></button>
-        <button id="brita"onclick="toggleSelection(this)"><img src="https://www.blocosmaua.com.br/wp-content/uploads/2023/05/blocos-maua-produtos-pedra.jpg"><p>Brita</p></button>
-        <button id="vergalhao"onclick="toggleSelection(this)"><img src="https://t74920.vteximg.com.br/arquivos/ids/165391/Vergalhao.jpg?v=637786229129370000"><p>Vergalhão</p></button>
-        <button id="conduite"onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/760588/conduite_1_amarelo_32mm_com_25m_tigre_433_1_20200311145845.jpg"><p>Conduite</p></button>
-        <button id="caixadeluz"onclick="toggleSelection(this)"><img src="https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/fluzaoco/catalog/api/fluzaoco_citelirr/6465622d2b4f3.jpg"><p>Caixa de luz</p></button>
-        <button id="quadrodistrib"onclick="toggleSelection(this)"><img src="https://dimensionalstoreb2b.vtexassets.com/arquivos/ids/302432-800-800?v=638271899818770000&width=800&height=800&aspect=true"><p>Quadro de distribuição</p></button>
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        </div>
+        <h2><a href="#" class="logo">OrçaRápido</a></h2>
+        <div class="navigation">
+          <a href="#">Informações</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content">
+        <div class="info">
+          <h2>Fácil e rápido<br><span>Calcule sua obra!</span></h2>
+          <p>Você está pensando em construir? O OrçaRápido é a sua solução para calcular orçamentos básicos e médias de custo da sua construção! Com uma interface intuitiva e fácil de usar, nosso site permite que você tenha uma visão clara dos custos envolvidos no seu projeto. Calcule ja o valor da sua obra!</p>
+          <a href="#" class="info-btn">Calcule já!</a>
+        </div>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
     </section>
 
-    <section id="Cobertura">
-        <h2>Cobertura</h2>
-        <p>Selecione o material:</p>
-        <br>
-        <button onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/825875/telha_ceramica_natural_americana_mundi_2281_2_62bdea00a9e73c25089f46219dae2c64.jpg"><p>Telha</p></button>
-    <!--        <button onclick="toggleSelection(this)"><img src="https://cassol.vtexassets.com/arquivos/ids/3549700-800-auto?v=638551137971930000&width=800&height=auto&aspect=true"><p>Telha fibrocimento</p></button> -->
-    </section>
-    
-    <section id="Acabamento">
-        <h2>Acabamento</h2>
-        <p>Selecione o material:</p>
-        <br>
-        <button id="argamassa" onclick="toggleSelection(this)"><img src="https://cdn.awsli.com.br/2500x2500/466/466641/produto/147230869/1dee02fc75.jpg"><p>Argamassa.</p></button>
-    </section>
-    
-    <div class="centraliza-result">
-        <h2 class="result-visao" id="result"></h2>
-    </div>
-    
-    <div id="Botãocalc" class="centraliza-button">
-        <button class="calcular-button custom-btn btn-9" type="button" onclick="total()"><h2>Calcular</h2></button>
-    </div>
-
-    <script src="total.js"></script>
-  
-</body>
+  </body>
 </html>

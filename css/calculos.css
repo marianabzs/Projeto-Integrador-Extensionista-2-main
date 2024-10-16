@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(315deg, #faff16 0%, #414140 37%, #414140 60%, #ae19ff 100%);
+    background-image: linear-gradient(315deg, #131311 0%, #414140 37%, #414140 60%, #2d2c2e 100%);
     width: 100%;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #efefef;
+    background-color: #e7e3e3;
     margin: auto;
     width: 100%;
 }
@@ -54,7 +54,7 @@ button p {
 }
 
 .selected {
-    background-color: #ae19ff;
+    background-color: #1d7203;
     color: white;
 }
 
@@ -117,7 +117,7 @@ button p {
     transition: all 0.3s ease;
     overflow: hidden;
 }
-.btn-9:after {
+/* .btn-9:after {
     position: absolute;
     content: " ";
     z-index: -1;
@@ -127,8 +127,10 @@ button p {
     height: 100%;
     background-color: #1c1f1f;
     background-image: linear-gradient(315deg, #f8f008 0%, #aa00ff 100%);
-    transition: all 0.3s ease;
-}
+    transition: all 0.3s ease; 
+}*/
+
+
 .btn-9:hover {
     background: transparent;
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
@@ -144,4 +146,10 @@ button p {
                 -4px -4px 6px 0 rgba(116, 125, 136, .2), 
         inset -4px -4px 6px 0 rgba(255,255,255,.5),
         inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+.backgroundsection {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
 }

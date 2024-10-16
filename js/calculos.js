@@ -8,8 +8,22 @@ function total() {
     const britaselecionado = document.getElementById('brita').classList.contains('selected');
     const vergalhaoselecionado = document.getElementById('vergalhao').classList.contains('selected');
     const conduiteselecionado = document.getElementById('conduite').classList.contains('selected');
-    const caixadeluzselecionado = document.getElementById('caixa-de-luz').classList.contains('selected');
-    const caixadedistribuicaoSelecionado = document.getElementById('caixa-de-distribuicao').classList.contains('selected');
+    const caixadeluzselecionado = document.getElementById('caixadeluz').classList.contains('selected');
+    const caixadedistribuicaoSelecionado = document.getElementById('quadrodistrib').classList.contains('selected');
+    const telhadefibraSelecionado = document.getElementById('telhafibroc').classList.contains('selected');
+    const calhaselecionado = document.getElementById('calha').classList.contains('selected');
+    const mantatermicaSelecionado = document.getElementById('mantaterm').classList.contains('selected');
+    const caixadaguaSelecionado = document.getElementById('caixadagua').classList.contains('selected');
+    const azulejoSelecionado = document.getElementById('azulejo').classList.contains('selected');
+    const pastilhaselecionado = document.getElementById('pastilha').classList.contains('selected');
+    const ceramicaselecio = document.getElementById('ceramica').classList.contains('selected');
+    const porcelanatoselecionado = document.getElementById('porcelanato').classList.contains('selected');
+    const cimentoqueimadoselecionado = document.getElementById('cimentoqueimado').classList.contains('selected');
+    const laminadoselecionado = document.getElementById('laminado').classList.contains('selected');
+    const madeirasselecionado = document.getElementById('madeiras').classList.contains('selected');
+    const pedrasselecionado = document.getElementById('pedras').classList.contains('selected');
+    const loucaSelecionado = document.getElementById('loucasemetais').classList.contains('selected');
+
 
     let costPerSquareMeter;
 
