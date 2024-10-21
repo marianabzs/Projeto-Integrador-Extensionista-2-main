@@ -25,7 +25,7 @@ header{
   width: 100%;
   padding: 30px 100px;
   display: flex;
-  background-color: #d8d6d4;
+  background-color: #d1cecb;
   justify-content: space-between;
   align-items: center;
 }
@@ -136,7 +136,6 @@ header .navigation a:hover{
   display: none;
 }
 
-/* Responsive CSS */
 
 @media (max-width: 960px){
   header .navigation{
