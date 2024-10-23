@@ -15,8 +15,6 @@ section{
   flex-direction: column;
   justify-content: flex-start;
   background-color: #e2e1e0;
-  background-size: cover;
-  background-position: center;
 }
 
 header{
@@ -151,7 +149,7 @@ header .navigation a:hover{
   }
 
   label:hover{
-    color: #fff;
+    color: #000000;
   }
 
   label .close-btn{

@@ -12,7 +12,7 @@ function total() {
     const caixadedistribuicaoSelecionado = document.getElementById('quadrodistrib').classList.contains('selected');
     const telhadefibraSelecionado = document.getElementById('telhafibroc').classList.contains('selected');
     const calhaselecionado = document.getElementById('calha').classList.contains('selected');
-    const mantatermicaSelecionado = document.getElementById('mantaterm').classList.contains('selected');
+    // const mantatermicaSelecionado = document.getElementById('mantaterm').classList.contains('selected');
     const caixadaguaSelecionado = document.getElementById('caixadagua').classList.contains('selected');
     const azulejoSelecionado = document.getElementById('azulejo').classList.contains('selected');
     const pastilhaselecionado = document.getElementById('pastilha').classList.contains('selected');
@@ -71,20 +71,8 @@ function total() {
         const vergapreco = vergametro * 40;
     }
 
-    document.getElementById('result').innerText = `O custo total estimado é: R$ ${totalCost.toFixed(2)}`;
+    document.getElementById('result').innerText = 'O custo total estimado é: R$ ${totalCost.toFixed(2)}';
 }
-
-function selecionarBotoes() {
-    const cimento = document.getElementById('cimento');
-    cimento.classList.toggle('selected');
-    const areia = document.getElementById('areia');
-    areia.classList.toggle('selected'); }
-
-function selecionarBotoes() {
-    const areia = document.getElementById('areia');
-    areia.classList.toggle('selected');
-    const cimento = document.getElementById('cimento');
-    cimento.classList.toggle('selected'); }
 
 function toggleSelection(button) {
     button.classList.toggle("selected");
