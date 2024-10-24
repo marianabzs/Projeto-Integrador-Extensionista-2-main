@@ -3,9 +3,9 @@ function total() {
     const tipoconstrucao = document.getElementById('tipoconstrucao').value;
     const tijoloSelecionado = document.getElementById('tijolo').classList.contains('selected');
     const cimentoSelecionado = document.getElementById('cimento').classList.contains('selected');
-    const canoSelecionado = document.getElementById('cano').classList.contains('selected');
-    const argamassaSelecionado = document.getElementById('argamassa').classList.contains('selected');
     const britaselecionado = document.getElementById('brita').classList.contains('selected');
+    const argamassaSelecionado = document.getElementById('argamassa').classList.contains('selected');
+    const canoSelecionado = document.getElementById('cano').classList.contains('selected');    
     const vergalhaoselecionado = document.getElementById('vergalhao').classList.contains('selected');
     const conduiteselecionado = document.getElementById('conduite').classList.contains('selected');
     const caixadeluzselecionado = document.getElementById('caixadeluz').classList.contains('selected');
@@ -75,5 +75,5 @@ function total() {
 }
 
 function toggleSelection(button) {
-    button.classList.toggle("selected");
+    button.classList.toggle('selected');
 }

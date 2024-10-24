@@ -14,6 +14,7 @@
 
 .navigation {
     position: relative;
+    display: flex;
     text-align: center;
     background-color: #575656;
     width: 100%;
@@ -67,16 +68,16 @@ button:hover {
 
 button img {
     height: 100px;
-    padding: 5px;
+    padding: 10px;
 }
 
 button p {
     margin: 2px;
 }
 
-.selected {
-    background-color: #5aa742;
-    color: white;
+button:active, button:focus {
+    background-color: #97eb7e;
+    color: rgb(255, 255, 255);
 }
 
 .centraliza-button {
@@ -158,6 +159,13 @@ button p {
     background-color: #333;
     position: absolute;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* remove underline */
 }
 
 .arrow-left:hover{
