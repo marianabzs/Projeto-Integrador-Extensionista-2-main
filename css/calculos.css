@@ -69,13 +69,14 @@ button:hover {
 button img {
     height: 100px;
     padding: 10px;
+    overflow-y: hidden; /* teste */
 }
 
 button p {
     margin: 2px;
-}
+}   
 
-button:active, button:focus {
+.selected{
     background-color: #97eb7e;
     color: rgb(255, 255, 255);
 }
@@ -100,6 +101,8 @@ button:active, button:focus {
 
 .result-visao {
     border: #c2c2c2;
+    font-family: "Poppins", sans-serif;
+    color: #d34e10;
     border-radius: 5px;
     border-style: solid;
     width: 500px;
@@ -141,7 +144,7 @@ button:active, button:focus {
 }
 
 .backgroundsection {
-    background-color: #333;
+    background-color: #505050;
     border-radius: 10px;
     padding: 20px;
 }
