@@ -73,7 +73,7 @@ function total() {
     //     const vergapreco = vergametro * 40;
     // }
 
-    document.getElementById('result').innerText = `O custo total estimado é: R$ ${totalCost.toFixed(2)}`;
+    document.getElementById('result').innerText = `Total: R$${totalCost.toFixed(2)}`;
 }
 
 function selecionarBotoes() {

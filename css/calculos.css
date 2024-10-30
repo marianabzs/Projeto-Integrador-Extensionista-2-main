@@ -18,7 +18,7 @@
     text-align: center;
     background-color: #575656;
     width: 100%;
-    padding: 10px;
+    padding: 10%;
 }
 
 body {
@@ -34,12 +34,20 @@ nav {
     text-align: center;
     background-color: #575656;
     padding: 10px;
+    width: 102%;
 }
 
 nav a {
     color: rgb(255, 255, 255);
-    margin-right: 50px;
+    margin-inline: 50px;
+    font-size: 15px;
+    font-weight: 500;
     text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #e69809;
 }
 
 section {
@@ -60,6 +68,7 @@ button {
     text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 button:hover {
@@ -77,7 +86,7 @@ button p {
 }   
 
 .selected{
-    background-color: #97eb7e;
+    background-color: #e69809;
     color: rgb(255, 255, 255);
 }
 
@@ -100,7 +109,7 @@ button p {
 }
 
 .result-visao {
-    border: #c2c2c2;
+    border: #e69809;
     font-family: "Poppins", sans-serif;
     color: #d34e10;
     border-radius: 5px;
@@ -112,6 +121,8 @@ button p {
 }
 
 .m {
+    font-family: "Poppins", sans-serif;
+
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
