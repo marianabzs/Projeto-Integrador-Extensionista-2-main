@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 .titulo {
-    fofont-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,6 +10,12 @@
     background-color: #5E4A39;
     color: #f0f8ff;
     width: 100%;
+}
+
+.titulo img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
 }
 
 .navigation {
@@ -24,6 +30,7 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
+    position: relative;
     background-color: #e7e3e3;
     margin: auto;
     width: 100%;
@@ -122,7 +129,7 @@ button p {
 }
 
 .m {
-    fofont-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
