@@ -41,7 +41,7 @@ function total() {
     const totalCostConstru = area * costPerSquareMeter;
     let totalCost = totalCostConstru;
 
-    const totalFinal = totalCost * andares;
+    // const totalFinal = totalCost * andares;
 
     if (tijoloSelecionado) {
         const tijolometro = area * 40;
@@ -75,7 +75,7 @@ function total() {
     //     const vergapreco = vergametro * 40;
     // }
 
-    document.getElementById('result').innerText = `Total: R$${totalFinal.toFixed(2)}`;
+    document.getElementById('result').innerText = `Total: R$${totalCost.toFixed(2)}`;
 }
 
 function selecionarBotoes() {
