@@ -17,7 +17,7 @@ function total() {
     // const calhaselecionado = document.getElementById('calha').classList.contains('selected');
     // const mantatermicaSelecionado = document.getElementById('mantaterm').classList.contains('selected');
     // const caixadaguaSelecionado = document.getElementById('caixadagua').classList.contains('selected');
-    // const azulejoSelecionado = document.getElementById('azulejo').classList.contains('selected');
+    const azulejoSelecionado = document.getElementById('azulejos').classList.contains('selected');
     // const pastilhaselecionado = document.getElementById('pastilha').classList.contains('selected');
     // const ceramicaselecio = document.getElementById('ceramica').classList.contains('selected');
     // const porcelanatoselecionado = document.getElementById('porcelanato').classList.contains('selected');
@@ -68,6 +68,11 @@ function total() {
         const argametro = area / 4;
         const argatotal = argametro * 33.12;
         totalCost += argatotal;
+    }
+
+    if (azulejoSelecionado) {
+        const azulejopreco = 95 * area;
+        totalCost += azulejopreco;
     }
 
     // if (vergalhaoselecionado) {
