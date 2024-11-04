@@ -27,17 +27,17 @@ function total() {
     // const loucaSelecionado = document.getElementById('loucasemetais').classList.contains('selected');
 
 
-    let costPerSquareMeter;
+    let custopormquadrado;
 
     if (tipoconstrucao === 'Residencial') {
-        costPerSquareMeter = 1200;
+        custopormquadrado = 1200;
     } else if (tipoconstrucao === 'Comercial') {
-        costPerSquareMeter = 1000;
+        custopormquadrado = 1000;
     } else {
-        costPerSquareMeter = 0;
+        custopormquadrado = 0;
     }
 
-    const totalCostConstru = area * costPerSquareMeter;
+    const totalCostConstru = area * custopormquadrado;
     let totalCost = totalCostConstru;
 
 
@@ -76,19 +76,14 @@ function total() {
     document.getElementById('result').innerText = `Total: R$${totalCost.toFixed(2)}`;
 }
 
-function selecionarBotoes() {
-    const cimento = document.getElementById('cimento');
-    cimento.classList.toggle('selected');
-    const areia = document.getElementById('areia');
-    areia.classList.toggle('selected'); }
-
-function selecionarBotoes() {
+function selecionaareiaecimento() {
     const areia = document.getElementById('areia');
     areia.classList.toggle('selected');
     const cimento = document.getElementById('cimento');
-    cimento.classList.toggle('selected'); }
+    cimento.classList.toggle('selected'); 
+}
 
-function toggleSelection(button) {
-    button.classList.toggle("selected");
+function selecionabotao(button) {
+    button.classList.toggle('selected');
 }
 

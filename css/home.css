@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 section{
@@ -33,6 +33,7 @@ label{
 }
 
 header .logo{
+  font-family: "Times New Roman", Times, serif;
   position: relative;
   color: #000;
   font-size: 30px;
@@ -59,7 +60,7 @@ header .navigation a:not(:last-child){
 }
 
 header .navigation a:hover{
-  background: #e69809;
+  background: #FFB94E;
 }
 
 .content{
@@ -68,7 +69,7 @@ header .navigation a:hover{
 }
 
 .content .info h2{
-  color: #e69809;
+  color: #FFB94E;
   font-size: 55px;
   text-transform: uppercase;
   font-weight: 800;
@@ -78,7 +79,7 @@ header .navigation a:hover{
 }
 
 .content .info h2 span{
-  color: #be540d;
+  color: #c4460b;
   font-size: 50px;
   font-weight: 600;
 }
@@ -90,8 +91,9 @@ header .navigation a:hover{
 }
 
 .content .info-btn{
+  font-family: "Times New Roman", Times, serif;
   color: #fff;
-  background: #e69809;
+  background: #c4460b;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
