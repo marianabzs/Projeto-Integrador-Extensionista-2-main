@@ -36,7 +36,7 @@ header .logo{
   font-family: "Times New Roman", Times, serif;
   position: relative;
   color: #000;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
@@ -106,7 +106,7 @@ header .navigation a:hover{
 }
 
 .content .info-btn:hover{ 
-  background: #c4460b;
+  background: #8b3107;
 }
 
 .media-icons{

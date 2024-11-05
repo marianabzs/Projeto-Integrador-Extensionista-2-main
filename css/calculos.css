@@ -73,8 +73,8 @@ button {
     text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove o destaque ao clicar*/
-}
+    /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); remove o destaque ao clicar */
+} 
 
 button:hover {
     transform: scale(1.05);
@@ -90,8 +90,8 @@ button p {
 }   
 
 .selected{
-    background-color: #FFB94E;
-    color: rgb(255, 255, 255);
+    background-color: #FFB94E; /* muda a cor do botão */ 
+    color: rgb(255, 255, 255); /* muda a cor do texto do botão*/
 }
 
 .centraliza-button {
@@ -185,6 +185,7 @@ button p {
     justify-content: center;
     align-items: center;
     text-decoration: none; /* remove underline */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove o destaque ao clicar */
 }
 
 .arrow-left:hover{
@@ -192,3 +193,130 @@ button p {
     transition: 0.3s;
 }
 
+/* @media (max-width: 960px) {
+    .titulo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .navigation {
+        padding: 5%;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-inline: 20px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .botaocalc {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .result-visao {
+        width: 90%;
+    }
+
+    .centraliza-button {
+        height: 20vh;
+    }
+
+    .m {
+        font-size: 18px;
+    }
+
+    .arrow-left {
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+    }
+} */
+
+/* Telas médias, como tablets */
+/* @media (min-width: 601px) and (max-width: 1024px) {
+    .titulo img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .navigation {
+        padding: 8%;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-inline: 30px;
+    }
+
+    button {
+        padding: 9px;
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    .botaocalc {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .result-visao {
+        width: 80%;
+    }
+
+    .m {
+        font-size: 19px;
+    }
+
+    .arrow-left {
+        font-size: 28px;
+        width: 45px;
+        height: 45px;
+    }
+} */
+
+/* Telas grandes, como desktops */
+/* @media (min-width: 1025px) {
+    .titulo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .navigation {
+        padding: 10%;
+    }
+
+    nav a {
+        font-size: 15px;
+        margin-inline: 50px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .botaocalc {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .result-visao {
+        width: 500px;
+    }
+
+    .m {
+        font-size: 20px;
+    }
+
+    .arrow-left {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+} */

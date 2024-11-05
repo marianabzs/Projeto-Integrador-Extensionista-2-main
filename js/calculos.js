@@ -4,8 +4,8 @@ function total() {
     const area = document.getElementById('area').value;
     const tipoconstrucao = document.getElementById('tipoconstrucao').value;
     const andares = document.getElementById('andares').value;
-    const quartos = document.getElementById('quartos').value;
-    const banheiros = document.getElementById('banheiros').value;
+    // const quartos = document.getElementById('quartos').value;
+    // const banheiros = document.getElementById('banheiros').value;
 
     const tijoloSelecionado = document.getElementById('tijolo').classList.contains('selected');
     const cimentoSelecionado = document.getElementById('cimento').classList.contains('selected');
@@ -14,7 +14,7 @@ function total() {
     const canoSelecionado = document.getElementById('cano').classList.contains('selected');    
     const vergalhaoSelecionado = document.getElementById('vergalhao').classList.contains('selected');
     // const conduiteSelecionado = document.getElementById('conduite').classList.contains('selected');
-    const caixadeluzSelecionado = document.getElementById('caixadeluz').classList.contains('selected');
+    // const caixadeluzSelecionado = document.getElementById('caixadeluz').classList.contains('selected');
     const caixadedistribuicaoSelecionado = document.getElementById('quadrodistrib').classList.contains('selected');
     // const telhadefibraSelecionado = document.getElementById('telhafibroc').classList.contains('selected');
     // const calhaSelecionado = document.getElementById('calha').classList.contains('selected');
@@ -67,7 +67,7 @@ function total() {
     }
 
     if (vergalhaoSelecionado) {
-        const vergametro = area / 12;
+        const vergametro = area / 12; // 12= metros de vergalhão
         const vergapreco = vergametro * 70;
         totalCost += vergapreco;
     }
@@ -80,12 +80,6 @@ function total() {
         const argametro = area / 4;
         const argatotal = argametro * 33.12;
         totalCost += argatotal;
-    }
-
-    if (azulejoSelecionado) {
-        const azulejometro = area / 4;
-        const azulejototal = azulejometro * 40;
-        totalCost += azulejototal;
     }
 
     if (azulejoSelecionado) {
@@ -111,11 +105,11 @@ function total() {
         }
     }
 
-    if (caixadeluzSelecionado) {
-       const caixadeluzpreco = 3.5 * 4;
-       const caixasdeluztotal = caixadeluzpreco * (quartos += banheiros);
-       totalCost += caixasdeluztotal;
-    }
+    // if (caixadeluzSelecionado) {
+    //    const caixadeluzpreco = 3.5 * 4;
+    //    const caixasdeluztotal = caixadeluzpreco * (quartos += banheiros);
+    //    totalCost += caixasdeluztotal;
+    // }
 
 
     // if (pastilhaSelecionado) {    

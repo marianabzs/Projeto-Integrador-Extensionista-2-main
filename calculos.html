@@ -22,14 +22,7 @@
         <a href="#Botãocalc">Calcular</a>
     </nav>
     
-    <form>    
-        
-    <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
-        <select id="tipoconstrucao">
-        <option value="Residencial">residencial</option>
-        <option value="Comercial">comercial</option>
-    </select></div>
-
+    <form>  
     <div class="m"><label for="area">Digite a área de construção em M²:</label>
     <input type="number" id="area" min="1" placeholder="Digite em M²" 
         onkeydown="if(event.key === 'Enter') event.preventDefault();">
@@ -40,7 +33,7 @@
             onkeydown="if(event.key === 'Enter') event.preventDefault();">
     </div>
 
-    <div class="m"><label for="quartos">Digite o número de quartos:</label>
+    <!-- <div class="m"><label for="quartos">Digite o número de quartos:</label>
         <input type="number" id="quartos" min="1" placeholder="Digite o número:" 
             onkeydown="if(event.key === 'Enter') event.preventDefault();">
     </div>
@@ -48,7 +41,7 @@
     <div class="m"><label for="banheiros">Digite o número de banheiros:</label>
         <input type="number" id="banheiros" min="1" placeholder="Digite o número:" 
             onkeydown="if(event.key === 'Enter') event.preventDefault();">
-    </div>
+    </div> -->
     <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
     <select id="tipoconstrucao">
         <option value="Residencial">residencial</option>
@@ -61,11 +54,11 @@
         <h2>Alvenaria</h2>
         <p>Selecione o material:</p>
         <br>
-        <button id="areia"onclick="selecionaareiaecimento()"><img src="https://amgestoroutput.s3.amazonaws.com/jcmateriais/img_produtos/1080-08384116.jpg"><p>Areia</p></button>
-        <button id="cimento"onclick="selecionaareiaecimento()"><img src="https://www.lojascoqueiro.com.br/anexo/imagem-destaque?imagem=17260"><p>Cimento</p></button>
+        <button id="areia"onclick="selecionaareiaecimento()"><img src="img\areia.jpg"><p>Areia</p></button>
+        <button id="cimento"onclick="selecionaareiaecimento()"><img src="img\cimento.jpg"><p>Cimento</p></button>
         <button id="brita"onclick="selecionabotao(this)"><img src="img\brita.jpg"><p>Brita</p></button>
-        <button id="tijolo" onclick="selecionabotao(this)"><img src=""><p>Tijolo</p></button>
-        <button id="cano"onclick="selecionabotao(this)"><img src=""><p>Cano PVC</p></button>
+        <button id="tijolo" onclick="selecionabotao(this)"><img src="img\tijolo.jpg"><p>Tijolo</p></button>
+        <button id="cano"onclick="selecionabotao(this)"><img src="img\canopvc.jpg"><p>Cano PVC</p></button>
         <button id="vergalhao"onclick="selecionabotao(this)"><img src="img\vergalhao.jpg"><p>Vergalhão</p></button>
         <button id="conduite"onclick="selecionabotao(this)"><img src="img\conduite.jpg"><p>Conduite</p></button>
         <button id="caixadeluz"onclick="selecionabotao(this)"><img src="img\caixadeluz.jpg"><p>Caixa de luz</p></button>
