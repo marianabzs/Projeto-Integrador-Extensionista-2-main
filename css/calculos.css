@@ -1,28 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 .titulo {
-    font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    background-color: #474542;
+    background-color: #5E4A39;
     color: #f0f8ff;
     width: 100%;
 }
 
+.titulo img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
 .navigation {
+    font-family: "Times New Roman", Times, serif;
     position: relative;
     display: flex;
     text-align: center;
-    background-color: #575656;
+    background-color: #563A23;
     width: 100%;
     padding: 10%;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
     background-color: #e7e3e3;
     margin: auto;
     width: 100%;
@@ -32,7 +40,7 @@ body {
 nav {
     position: relative;
     text-align: center;
-    background-color: #575656;
+    background-color: #563A23;
     padding: 10px;
     width: 102%;
 }
@@ -47,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e69809;
+    color: #FFB94E;
 }
 
 section {
@@ -58,7 +66,7 @@ section {
 button {
     padding: 10px;
     background-color: rgb(212, 212, 212);
-    font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 550;
     justify-content: flex-start;
     border: none;
@@ -86,7 +94,7 @@ button p {
 }   
 
 .selected{
-    background-color: #e69809;
+    background-color: #FFB94E;
     color: rgb(255, 255, 255);
 }
 
@@ -109,9 +117,9 @@ button p {
 }
 
 .result-visao {
-    border: #e69809;
-    font-family: "Poppins", sans-serif;
-    color: #d34e10;
+    border: #FFB94E;
+    font-family: "Times New Roman", Times, serif;;
+    color: #c4460b;
     border-radius: 5px;
     border-style: solid;
     width: 500px;
@@ -121,8 +129,7 @@ button p {
 }
 
 .m {
-    font-family: "Poppins", sans-serif;
-
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
@@ -134,9 +141,9 @@ button p {
     color: #ffffff;
     border-radius: 5px;
     padding: 5px 25px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 700;
-    background: #e69809;
+    background: #FFB94E;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
