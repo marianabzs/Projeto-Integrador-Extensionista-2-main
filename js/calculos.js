@@ -4,8 +4,8 @@ function total() {
     const area = document.getElementById('area').value;
     const tipoconstrucao = document.getElementById('tipoconstrucao').value;
     const andares = document.getElementById('andares').value;
-    // const quartos = document.getElementById('quartos').value;
-    // const banheiros = document.getElementById('banheiros').value;
+    const quartos = document.getElementById('quartos').value;
+    const banheiros = document.getElementById('banheiros').value;
 
     const tijoloSelecionado = document.getElementById('tijolo').classList.contains('selected');
     const cimentoSelecionado = document.getElementById('cimento').classList.contains('selected');
@@ -111,11 +111,11 @@ function total() {
         }
     }
 
-    // if (caixadeluzSelecionado) {
-    //    const caixadeluzpreco = 3.5 * 3;
-    //    const caixasdeluztotal = caixadeluzpreco * (quartos);
-    //    totalCost += caixasdeluztotal;
-    // }
+    if (caixadeluzSelecionado) {
+       const caixadeluzpreco = 3.5 * 4;
+       const caixasdeluztotal = caixadeluzpreco * (quartos += banheiros);
+       totalCost += caixasdeluztotal;
+    }
 
 
     // if (pastilhaSelecionado) {    

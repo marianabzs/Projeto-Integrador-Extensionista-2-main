@@ -49,8 +49,12 @@
         <input type="number" id="banheiros" min="1" placeholder="Digite o número:" 
             onkeydown="if(event.key === 'Enter') event.preventDefault();">
     </div>
+    <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
+    <select id="tipoconstrucao">
+        <option value="Residencial">residencial</option>
+        <option value="Comercial">comercial</option>
+    </select></div>
     </form>
-
 
       
     <section id="Alvenaria">
@@ -73,7 +77,7 @@
         <p>Selecione o material:</p>
         <br>
         <button id="telha"onclick="selecionabotao(this)"><img src="img\telha.jpg"><p>Telha</p></button>
-        <button id="telhafibroc" onclick="selecionabotao(this)"><img src="img\telhafibrocimento.jpg"><p>Telha fibrocimento</p></button>
+        <button id="telhafibrocimento" onclick="selecionabotao(this)"><img src="img\telhafibrocimento.jpg"><p>Telha fibrocimento</p></button>
         <button id="calha"onclick="selecionabotao(this)"><img src="img\calha.jpg"><p>Calha</p></button>
         <button id="mantaterm" onclick="selecionabotao(this)"><img src="img\mantatermica.jpg"><p>Manta térmica</p></button>
         <button id="caixadagua" onclick="selecionabotao(this)"><img src="img\caixadagua.jpg"><p>Caixa D'água</p></button>
