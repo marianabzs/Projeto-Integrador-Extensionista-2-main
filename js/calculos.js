@@ -88,19 +88,19 @@ function total() {
     document.getElementById('result').innerText = `Total: R$${totalCost.toFixed(2)}`;
 }
 
-function selecionarBotoes() {
+function selecionarBotoes(){
     const cimento = document.getElementById('cimento');
     cimento.classList.toggle('selected');
     const areia = document.getElementById('areia');
     areia.classList.toggle('selected'); }
 
-function selecionarBotoes() {
+function selecionarBotoes(){
     const areia = document.getElementById('areia');
     areia.classList.toggle('selected');
     const cimento = document.getElementById('cimento');
     cimento.classList.toggle('selected'); }
 
-function toggleSelection(button) {
+function toggleSelection(button){
     button.classList.toggle("selected");
 }
 
