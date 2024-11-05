@@ -28,6 +28,11 @@
         onkeydown="if(event.key === 'Enter') event.preventDefault();">
     </div> <!-- setando minimo de m², impedindo de reiniciar a pag ao pressionar enter -->
 
+    <div class="m"><label for="andares">Digite o número de andares:</label>
+        <input type="number" id="andares" min="1" placeholder="Digite o número:" 
+            onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div>
+
     <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
     <select id="tipoconstrucao">
         <option value="Residencial">residencial</option>
@@ -54,11 +59,11 @@
         <h2>Cobertura</h2>
         <p>Selecione o material:</p>
         <br>
-        <button id="telha"onclick="selecionabotao(this)"><img src="img\telha.jpg"><p>Telha</p></button>
-        <button id="telhafibroc" onclick="selecionabotao(this)"><img src="img\telhafibrocimento.jpg"><p>Telha fibrocimento</p></button>
-        <button id="calha"onclick="selecionabotao(this)"><img src="img\calha.jpg"><p>Calha</p></button>
-        <button id="mantaterm" onclick="selecionabotao(this)"><img src="img\mantatermica.jpg"><p>Manta térmica</p></button>
-        <button id="caixadagua" onclick="selecionabotao(this)"><img src="img\caixadagua.jpg"><p>Caixa D'água</p></button>
+        <button id="telha"onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/825875/telha_ceramica_natural_americana_mundi_2281_2_62bdea00a9e73c25089f46219dae2c64.jpg"><p>Telha</p></button>
+        <button id="telhafibrocimento" onclick="toggleSelection(this)"><img src="https://cassol.vtexassets.com/arquivos/ids/3549700-800-auto?v=638551137971930000&width=800&height=auto&aspect=true"><p>Telha fibrocimento</p></button>
+        <button id="calha"onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/964419/calha_de_beiral_padrao_acomix_c_3_0m_967_1_dddfb5a513aa6a04f6abf0055c484247.jpg"><p>Calha</p></button>
+        <button id="mantaterm" onclick="toggleSelection(this)"><img src="https://cdn.awsli.com.br/800x800/317/317291/produto/11982789/7debfbcac5.jpg"><p>Manta térmica</p></button>
+        <button id="caixadagua" onclick="toggleSelection(this)"><img src="https://acdn.mitiendanube.com/stores/001/797/134/products/cax-41-578b9bcebabd2aeb0116783924363492-1024-1024.png"><p>Caixa D'água</p></button>
 
     </section>
     
