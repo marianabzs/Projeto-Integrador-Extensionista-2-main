@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="titulo">
-        <img src="img\orcarapidologo.png" alt="logo">
+        <img src="img\logo.png" alt="logo">
         <h2>Calcule sua obra!</h2>
         <a class="arrow-left"
             href="index.html"><i class="fas fa-arrow-left"></i>
@@ -22,18 +22,36 @@
         <a href="#Botãocalc">Calcular</a>
     </nav>
     
-    <form>
+    <form>    
+        
+    <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
+        <select id="tipoconstrucao">
+        <option value="Residencial">residencial</option>
+        <option value="Comercial">comercial</option>
+    </select></div>
+
     <div class="m"><label for="area">Digite a área de construção em M²:</label>
     <input type="number" id="area" min="1" placeholder="Digite em M²" 
         onkeydown="if(event.key === 'Enter') event.preventDefault();">
     </div> <!-- setando minimo de m², impedindo de reiniciar a pag ao pressionar enter -->
 
-    <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
-    <select id="tipoconstrucao">
-        <option value="Residencial">residencial</option>
-        <option value="Comercial">comercial</option>
-    </select></div>
+    <div class="m"><label for="andares">Digite o número de andares:</label>
+        <input type="number" id="andares" min="1" placeholder="Digite o número:" 
+            onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div>
+
+    <div class="m"><label for="quartos">Digite o número de quartos:</label>
+        <input type="number" id="quartos" min="1" placeholder="Digite o número:" 
+            onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div>
+
+    <div class="m"><label for="banheiros">Digite o número de banheiros:</label>
+        <input type="number" id="banheiros" min="1" placeholder="Digite o número:" 
+            onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div>
     </form>
+
+
       
     <section id="Alvenaria">
         <h2>Alvenaria</h2>
