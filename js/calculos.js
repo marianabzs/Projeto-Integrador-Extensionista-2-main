@@ -14,17 +14,18 @@ function total() {
     const canoSelecionado = document.getElementById('cano').classList.contains('selected');    
     const vergalhaoSelecionado = document.getElementById('vergalhao').classList.contains('selected');
     // const conduiteSelecionado = document.getElementById('conduite').classList.contains('selected');
-    // const caixadeluzSelecionado = document.getElementById('caixadeluz').classList.contains('selected');
+    const caixadeluzSelecionado = document.getElementById('caixadeluz').classList.contains('selected');
     const caixadedistribuicaoSelecionado = document.getElementById('quadrodistrib').classList.contains('selected');
     // const telhadefibraSelecionado = document.getElementById('telhafibroc').classList.contains('selected');
+    const telhaselecionado = document.getElementById('telha').classList.contains('selected');
     // const calhaSelecionado = document.getElementById('calha').classList.contains('selected');
     // const mantatermicaSelecionado = document.getElementById('mantaterm').classList.contains('selected');
     const caixadaguaSelecionado = document.getElementById('caixadagua').classList.contains('selected');
     const azulejoSelecionado = document.getElementById('azulejos').classList.contains('selected');
-    // const pastilhaSelecionado = document.getElementById('pastilha').classList.contains('selected');
+    const pastilhasSelecionado = document.getElementById('pastilhas').classList.contains('selected');
     const ceramicaSelecionado = document.getElementById('ceramica').classList.contains('selected');
     const porcelanatoSelecionado = document.getElementById('porcelanato').classList.contains('selected');
-    // const cimentoqueimadoSelecionado = document.getElementById('cimentoqueimado').classList.contains('selected');
+    const cimentoqSelecionado = document.getElementById('cimentoq').classList.contains('selected');
     // const laminadoSelecionado = document.getElementById('laminado').classList.contains('selected');
     // const madeirasSelecionado = document.getElementById('madeiras').classList.contains('selected');
     // const pedrasSelecionado = document.getElementById('pedras').classList.contains('selected');
@@ -105,18 +106,27 @@ function total() {
         }
     }
 
-    // if (caixadeluzSelecionado) {
-    //    const caixadeluzpreco = 3.5 * 4;
-    //    const caixasdeluztotal = caixadeluzpreco * (quartos += banheiros);
-    //    totalCost += caixasdeluztotal;
-    // }
+    if (telhaselecionado) {
+        const telhaPreco = 35 * area;
+        totalCost += telhaPreco;
+    }
+
+    if (cimentoqSelecionado) {
+        const cimentoqueimadopreco = 35 * area;
+        totalCost += cimentoqueimadopreco;
+    }
+
+    if (caixadeluzSelecionado) {
+       const caixadeluzpreco = 7 * area;
+       totalCost += caixadeluzpreco;
+    }
 
 
-    // if (pastilhaSelecionado) {    
-    //     const pastilhametro = area / 4; 
-    //     const pastilhatotal = pastilhametro * 40;
-    //     totalCost += pastilhatotal;
-    // }
+    if (pastilhasSelecionado) {    
+        const pastilhametro = area / 4; 
+        const pastilhatotal = pastilhametro * 40;
+        totalCost += pastilhatotal;
+    }
 
 
     totalCost = totalCost * andares;
