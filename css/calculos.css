@@ -192,3 +192,35 @@ button p {
     background-color: #382c21;
     transition: 0.3s;
 }
+
+.rodape {
+    
+    background-color: #5E4A39; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+    padding: 20px; /* Espaçamento interno */
+    position: relative; /* Posição padrão */
+    bottom: 0; /* Fixa o rodapé no final */
+    width: 100%;
+}
+    
+.rodape-conteudo {
+    max-width: 1200px; /* Largura máxima */
+    margin: auto; /* Centraliza o conteúdo */
+}
+    
+.rodape a {
+        
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Espaçamento entre links */
+}
+    
+.rodape a:hover {
+    color: #FFB94E; /* Cor ao passar o mouse */
+}
+    
+.rodape p {
+    margin: 10px 0; /* Espaçamento entre parágrafos */
+    font-size: 0.9em; /* Tamanho do texto */
+}
