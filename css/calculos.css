@@ -1,5 +1,3 @@
-
-
 .titulo {
     font-family: "Times New Roman", Times, serif;
     display: flex;
@@ -15,7 +13,6 @@
 .titulo img {
     width: 250px;
     height: 250px;
-    margin-bottom: 20px;
 }
 
 .navigation {
@@ -76,8 +73,8 @@ button {
     text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+    /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); remove o destaque ao clicar */
+} 
 
 button:hover {
     transform: scale(1.05);
@@ -86,7 +83,6 @@ button:hover {
 button img {
     height: 100px;
     padding: 10px;
-    overflow-y: hidden; /* teste */
 }
 
 button p {
@@ -94,8 +90,8 @@ button p {
 }   
 
 .selected{
-    background-color: #FFB94E;
-    color: rgb(255, 255, 255);
+    background-color: #FFB94E; /* muda a cor do botão */ 
+    color: rgb(255, 255, 255); /* muda a cor do texto do botão*/
 }
 
 .centraliza-button {
@@ -149,6 +145,8 @@ button p {
     position: relative;
     display: inline-block;
     outline: none;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 .botaocalc:hover{ 
@@ -177,7 +175,7 @@ button p {
     width: 50px;
     height: 50px;
     border-radius: 10%;
-    background-color: #333;
+    background-color: #563A23;
     position: absolute;
     cursor: pointer;
     display: flex;
@@ -187,41 +185,10 @@ button p {
     justify-content: center;
     align-items: center;
     text-decoration: none; /* remove underline */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove o destaque ao clicar */
 }
 
 .arrow-left:hover{
-    background-color: #c4460b;
+    background-color: #382c21;
     transition: 0.3s;
-}
-
-.rodape {
-    
-    background-color: #333; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Alinhamento centralizado */
-    padding: 20px; /* Espaçamento interno */
-    position: relative; /* Posição padrão */
-    bottom: 0; /* Fixa o rodapé no final */
-    width: 100%;
-}
-    
-.rodape-conteudo {
-    max-width: 1200px; /* Largura máxima */
-    margin: auto; /* Centraliza o conteúdo */
-}
-    
-.rodape a {
-        
-    color: #aaa; /* Cor dos links */
-    text-decoration: none; /* Remove o sublinhado */
-    margin: 0 10px; /* Espaçamento entre links */
-}
-    
-.rodape a:hover {
-    color: #fff; /* Cor ao passar o mouse */
-}
-    
-.rodape p {
-    margin: 10px 0; /* Espaçamento entre parágrafos */
-    font-size: 0.9em; /* Tamanho do texto */
 }

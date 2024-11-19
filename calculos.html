@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="titulo">
-        <img src="img\orcarapidologo.png" alt="logo">
+        <img src="img\logo.png" alt="logo">
         <h2>Calcule sua obra!</h2>
         <a class="arrow-left"
             href="index.html"><i class="fas fa-arrow-left"></i>
@@ -22,7 +22,7 @@
         <a href="#Botãocalc">Calcular</a>
     </nav>
     
-    <form>
+    <form>  
     <div class="m"><label for="area">Digite a área de construção em M²:</label>
     <input type="number" id="area" min="1" placeholder="Digite em M²" 
         onkeydown="if(event.key === 'Enter') event.preventDefault();">
@@ -33,22 +33,32 @@
             onkeydown="if(event.key === 'Enter') event.preventDefault();">
     </div>
 
+    <!-- <div class="m"><label for="quartos">Digite o número de quartos:</label>
+        <input type="number" id="quartos" min="1" placeholder="Digite o número:" 
+            onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div>
+
+    <div class="m"><label for="banheiros">Digite o número de banheiros:</label>
+        <input type="number" id="banheiros" min="1" placeholder="Digite o número:" 
+            onkeydown="if(event.key === 'Enter') event.preventDefault();">
+    </div> -->
     <div class="m"><label for="tipoconstrucao">Qual o tipo da construção:</label>
     <select id="tipoconstrucao">
         <option value="Residencial">residencial</option>
         <option value="Comercial">comercial</option>
     </select></div>
     </form>
+
       
     <section id="Alvenaria">
         <h2>Alvenaria</h2>
         <p>Selecione o material:</p>
         <br>
-        <button id="areia"onclick="selecionaareiaecimento()"><img src="https://amgestoroutput.s3.amazonaws.com/jcmateriais/img_produtos/1080-08384116.jpg"><p>Areia</p></button>
-        <button id="cimento"onclick="selecionaareiaecimento()"><img src="https://www.lojascoqueiro.com.br/anexo/imagem-destaque?imagem=17260"><p>Cimento</p></button>
+        <button id="areia"onclick="selecionaareiaecimento()"><img src="img\areia.jpg"><p>Areia</p></button>
+        <button id="cimento"onclick="selecionaareiaecimento()"><img src="img\cimento.jpg"><p>Cimento</p></button>
         <button id="brita"onclick="selecionabotao(this)"><img src="img\brita.jpg"><p>Brita</p></button>
-        <button id="tijolo" onclick="selecionabotao(this)"><img src=""><p>Tijolo</p></button>
-        <button id="cano"onclick="selecionabotao(this)"><img src=""><p>Cano PVC</p></button>
+        <button id="tijolo" onclick="selecionabotao(this)"><img src="img\tijolo.jpg"><p>Tijolo</p></button>
+        <button id="cano"onclick="selecionabotao(this)"><img src="img\canopvc.jpg"><p>Cano PVC</p></button>
         <button id="vergalhao"onclick="selecionabotao(this)"><img src="img\vergalhao.jpg"><p>Vergalhão</p></button>
         <button id="conduite"onclick="selecionabotao(this)"><img src="img\conduite.jpg"><p>Conduite</p></button>
         <button id="caixadeluz"onclick="selecionabotao(this)"><img src="img\caixadeluz.jpg"><p>Caixa de luz</p></button>
@@ -60,7 +70,7 @@
         <p>Selecione o material:</p>
         <br>
         <button id="telha"onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/825875/telha_ceramica_natural_americana_mundi_2281_2_62bdea00a9e73c25089f46219dae2c64.jpg"><p>Telha</p></button>
-        <button id="telhafibrocimento" onclick="toggleSelection(this)"><img src="https://normatel.fbitsstatic.net/img/p/telha-ondulada-em-fibrocimento-5mm-2-44x1-10m-cinza-brasilit-80634/267200.jpg?w=770&h=770&v=no-change&qs=ignore"><p>Telha fibrocimento</p></button>
+        <button id="telhafibrocimento" onclick="toggleSelection(this)"><img src="https://cassol.vtexassets.com/arquivos/ids/3549700-800-auto?v=638551137971930000&width=800&height=auto&aspect=true"><p>Telha fibrocimento</p></button>
         <button id="calha"onclick="toggleSelection(this)"><img src="https://images.tcdn.com.br/img/img_prod/964419/calha_de_beiral_padrao_acomix_c_3_0m_967_1_dddfb5a513aa6a04f6abf0055c484247.jpg"><p>Calha</p></button>
         <button id="mantaterm" onclick="toggleSelection(this)"><img src="https://cdn.awsli.com.br/800x800/317/317291/produto/11982789/7debfbcac5.jpg"><p>Manta térmica</p></button>
         <button id="caixadagua" onclick="toggleSelection(this)"><img src="https://acdn.mitiendanube.com/stores/001/797/134/products/cax-41-578b9bcebabd2aeb0116783924363492-1024-1024.png"><p>Caixa D'água</p></button>
